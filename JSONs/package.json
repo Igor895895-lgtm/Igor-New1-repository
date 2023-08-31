@@ -1,0 +1,19 @@
+{
+  "name": "jsons",
+  "version": "1.0.0",
+  "description": "package contain code for learning JS",
+  "main": "JSON.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igor895895-lgtm/Igor-New1-repository.git#Tasks"
+  },
+  "author": "Igor Stolbtsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igor895895-lgtm/Igor-New1-repository/issues"
+  },
+  "homepage": "https://github.com/Igor895895-lgtm/Igor-New1-repository/tree/Tasks#readme"
+}
