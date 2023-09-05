@@ -6,7 +6,7 @@
 
 // console.log(jsonObj1)
 
-//const values = require('./values.json')
+const values = require('./values.json')
 
 // const fs = require('fs-extra')
 const { writeFile, readFile } = require('fs');
@@ -91,27 +91,47 @@ const newData = {phone: 434224, adress: 'Street'}
 
 
 
+// const fs = require('fs-extra');
+// let path = "./values.json";
+// let data, jsonData;
+//     try {
+//     if(fs.existsSync(path)) {
+//     data = fs.readFileSync(path, 'utf8');
+//     if(data) {
+//      jsonData = JSON.parse(data);
+//     if(typeof jsonData === 'object' && jsonData !== null && !Array.isArray(jsonData)) {
+//     jsonData.test = 'test';
+//     jsonData.email = 'test@gmail.com';
+//     fs.writeFileSync(path, JSON.stringify(jsonData));
+//     } else {
+//                  throw new Error("Parsed JSON data is not an object");
+//        }
+//   } else {
+//     throw new Error("No data read from the file");
+//        }
+//  } else {
+//       throw new Error("File does not exist");
+//    }
+//  } catch (err) {
+//    console.error(err.message);
+//  }
+
+// let ddd = JSON.parse(fs.readFileSync(path, 'utf-8'))
+// console.log (ddd)
+
+
+//ddd.newVAL = 'Myval'
+
+//fs.writeFileSync(PATH, json.stringify (ddd))
+
 const fs = require('fs-extra');
-let path = "./values.json";
-let data, jsonData;
-    try {
-    if(fs.existsSync(path)) {
-    data = fs.readFileSync(path, 'utf8');
-    if(data) {
-     jsonData = JSON.parse(data);
-    if(typeof jsonData === 'object' && jsonData !== null && !Array.isArray(jsonData)) {
-    jsonData.test = 'test';
-    jsonData.email = 'test@gmail.com';
-    fs.writeFileSync(path, JSON.stringify(jsonData));
-    } else {
-                 throw new Error("Parsed JSON data is not an object");
-       }
-  } else {
-    throw new Error("No data read from the file");
-       }
- } else {
-      throw new Error("File does not exist");
-   }
- } catch (err) {
-   console.error(err.message);
- }
+const path = './values.json';
+async function func1() {
+    let ddd = await JSON.parse(fs.readFileSync(path, 'utf-8'))
+    console.log(ddd)
+    console.log('Hello from async function')
+    ddd.dkdds = 'DKD'
+    await fs.writeFile(path, JSON.stringify(ddd))
+}
+
+func1()
