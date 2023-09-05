@@ -22,7 +22,7 @@ const object = "Igor";
 const p1 = "qqq"
 console.log (addPropertiesToObject (object, p1))
     if (typeof(p1) === 'number') {
-        object.prop1 = p1;
+        object.prop2 = p1;
     } else {
         console.log('At least one properties is not a number');
     }
