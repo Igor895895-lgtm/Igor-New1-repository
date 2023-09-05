@@ -16,12 +16,17 @@ console.log("incorrect type of data");
 // create js function that add properties for the object, allowing only number
 
 
-function addNumbers(a, b = 10) {
-return a + b;
-}
-console.log(addNumbers(6))
-
-
+function addPropertiesToObject (object, p1) {
+    return object, p1};
+const object = "Igor";
+const p1 = "qqq"
+console.log (addPropertiesToObject (object, p1))
+    if (typeof(p1) === 'number') {
+        object.prop1 = p1;
+    } else {
+        console.log('At least one properties is not a number');
+    }
+  
 //create JS object with 5 different properties
 
 
