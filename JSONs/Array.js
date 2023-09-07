@@ -56,3 +56,4 @@ getOnlyString(arr1)
 //console.log(result)
 //console.log(resultWithUpperC)
 
+
