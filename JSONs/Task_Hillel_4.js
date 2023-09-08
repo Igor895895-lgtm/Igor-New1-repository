@@ -1,16 +1,16 @@
 // create a function that takes one param and inside makes the value Uppercase
 // if the parameter not string type - console message about the incorrect type of data.
 
-function changeToUpperCase(hometask) {
-    return hometask.toUpperCase();
-}
-const result = changeToUpperCase("task 4");
 const stringVariable = "task 4";
-console.log(result);
-
-if (typeof stringVariable !== "string") {
-console.log("incorrect type of data");
+function changeToUpperCase(hometask) { 
+  if (typeof stringVariable === "string") {
+    return hometask.toUpperCase(); }
+    else { console.log("incorrect type of data");
+      }
 }
+console.log(changeToUpperCase("task 4"));
+
+
 
 
 // create js function that add properties for the object, allowing only number
