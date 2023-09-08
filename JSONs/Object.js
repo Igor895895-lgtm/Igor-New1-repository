@@ -32,11 +32,11 @@ console.log(testDataEnv1.mailaddressarr[0].mail_pass)
 function addPropColor() {
     this.color = 'red'
 }
-//addPropColor.prototype = objMy
-//const objMy2 = new addPropColor()
-// objMy.addPropColor = addPropColor
-// objMy.addPropColor()
-// console.log(Object.values(objMy))
+addPropColor.prototype = objMy
+const objMy2 = new addPropColor()
+objMy.addPropColor = addPropColor
+objMy.addPropColor()
+console.log(Object.values(objMy))
 
 
 function getAllProp() {

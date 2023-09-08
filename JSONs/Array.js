@@ -50,10 +50,32 @@ for (let i = 0; i < baseArr.length; i++) {
     await resultWithUpperC.push(firstLetter + restLetters)
 }
 //let resultR = getOnlyString(arr1)
-console.log(resultWithUpperC)
+//console.log(resultWithUpperC)
 }
 getOnlyString(arr1)
 //console.log(result)
 //console.log(resultWithUpperC)
 
 
+let mArr22 = [
+    [1, 3, 'Shrek'],
+    [4, 10],
+    [40, 50]
+]
+let nameShrek = mArr22[0][2]
+console.log(nameShrek)
+
+for (let i = 0; i < mArr22.length; i++) {
+    let smalArr = mArr22[i];
+    console.log(mArr22[i]);
+    for (let y = 0; y < smalArr.length; y++) {
+        console.log("all array [" + i + "][" + y +"] = "+ smalArr[y])
+    }
+}
+
+
+const objMy = {name: 'Igor', lName: 'Stolbtsov', age: 1222}
+const testDataEnv1 = {url: 'url1', username: 'user1'}
+const testDataEnv2 = {url: 'url2', username: 'user2'}
+
+console.log(Object.keys(testDataEnv1))
