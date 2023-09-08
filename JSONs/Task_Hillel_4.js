@@ -45,7 +45,7 @@ console.log(thisStudent)
 
 thisStudent.specialization = "QA"
 console.log(thisStudent)
-dddd
+
 
 //check the function syntax and if some issues propose
 
