@@ -41,11 +41,12 @@ console.log(thisStudent)
 
 // with previously created function add a new property
 
-thisStudent.specialization = "QA"
-console.log(thisStudent)
+function addSpecialization(student, specializationValue) {
+  student.specialization = specializationValue;
+}
 
-
-//check the function syntax and if some issues propose
+addSpecialization(thisStudent, "QA");
+console.log(thisStudent);
 
 //check the function syntax and if some issues propose
 
