@@ -32,9 +32,9 @@ class Worker extends Human {
         const currentHour = now.getHours()
 
         if (currentHour >= 9 && currentHour < 18) {
-            console.log('Worker is currently working.')
+            console.log('Worker is working now.')
         } else {
-            console.log('Worker is not working right now.')
+            console.log('Worker is not working at the moment.')
         }
     }
 }
