@@ -1,0 +1,6 @@
+{
+ "baseUrl": "https://www.guru99.com/",
+  "env": {
+    "jsonFilePath": "C:/Users/Игорь/Desktop/Git_JS/Igor-New1-repository/cypress/e2e/urls.json"
+  }
+}
