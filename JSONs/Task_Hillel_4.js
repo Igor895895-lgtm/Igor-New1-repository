@@ -1,16 +1,15 @@
 // create a function that takes one param and inside makes the value Uppercase
 // if the parameter not string type - console message about the incorrect type of data.
 
+const stringVariable = "task 4";
 function changeToUpperCase(hometask) {
+  if (typeof stringVariable !== "string") {
+    console.log("incorrect type of data");
+    }
     return hometask.toUpperCase();
 }
-const result = changeToUpperCase("task 4");
-const stringVariable = "task 4";
-console.log(result);
+console.log(changeToUpperCase(stringVariable));
 
-if (typeof stringVariable !== "string") {
-console.log("incorrect type of data");
-}
 
 
 // create js function that add properties for the object, allowing only number
@@ -43,8 +42,23 @@ console.log(thisStudent)
 
 // with previously created function add a new property
 
-thisStudent.specialization = "QA"
-console.log(thisStudent)
+
+
+function addSpecialization(student, specializationValue) {
+  student.specialization = specializationValue;
+}
+
+addSpecialization(thisStudent, "QA");
+console.log(thisStudent);
+
+
+
+
+
+
+
+// thisStudent.specialization = "QA"
+// console.log(thisStudent)
 
 
 //check the function syntax and if some issues propose

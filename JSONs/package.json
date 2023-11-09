@@ -1,6 +1,7 @@
 {
   "name": "jsons",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "package contain code for learning JS",
   "main": "JSON.js",
   "scripts": {
