@@ -72,3 +72,32 @@ console.log(student3.fingers)
 
 // let userN = new User()
 // console.log(userN.arms)
+
+let PetroWorker
+PetroWorker.isWorking()
+
+
+
+let animal = {
+    eats: true,
+    walk () {
+        console.log("Тварина йде");
+    },
+    eat () {
+}
+};
+
+let rabbit = {
+    jumps: true,
+    eat () {
+        console.log ('Rabbit eat some feed')
+    },
+    __proto__: animal
+};
+
+let r2 = {
+    earLength: 5,
+    ___proto__: rabbit
+}
+
+rabbit.eat();
