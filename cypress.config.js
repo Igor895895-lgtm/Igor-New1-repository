@@ -4,12 +4,12 @@ const { configurePlugin } = require ("cypress-mongodb")
 
 
 module.exports = defineConfig({
-env: {
-  mongodb: {
-    uri: 'mongodb://127.0.0.1:27017',
-    database: 'test'
-  }
-},
+// env: {
+//   mongodb: {
+//     uri: 'mongodb://127.0.0.1:27017',
+//     database: 'test'
+//   }
+// },
 reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
@@ -33,8 +33,8 @@ reporter: 'cypress-mochawesome-reporter',
       
       on('task', {log(message) {console.log(message); return null }})
       on('task', {saveUrl(url) {fs.writeFileSync('url.json', JSON.stringify(url)); return null }})
-     // const newUrl = config.env.urlFromCli || 'https://www.guru99.com/'
-     // config.baseUrl = newUrl
+     const newUrl = config.env.urlFromCli || 'https://www.guru99.com/'
+     config.baseUrl = newUrl
 
      require('cypress-mochawesome-reporter/plugin')(on);
 
