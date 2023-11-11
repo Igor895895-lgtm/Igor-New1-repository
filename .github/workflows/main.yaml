@@ -3,7 +3,7 @@ name: Cypress Tests
 on:
   push:
     branches:
-      - For_Task_15
+      - For_Task_15_3
 
 jobs:
   test:
