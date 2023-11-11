@@ -3,7 +3,7 @@ name: Cypress Tests
 on:
   push:
     branches:
-      - main
+      - For_Task_15
 
 jobs:
   test:
@@ -20,4 +20,4 @@ jobs:
         run: npm install
 
       - name: Run Cypress tests
-        run: npm run cy:run_chrome_headed -- --spec cypress/e2e/
+        run: npm run cy:run_chrome_headed -- --spec cypress/e2e/Custom_scenarious/newborn.cy.js
