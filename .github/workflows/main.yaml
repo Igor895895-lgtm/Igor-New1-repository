@@ -1,14 +1,23 @@
-name: Trigger e2e UI tests
+name: Cypress Tests
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  chrome:
+  test:
     runs-on: ubuntu-latest
-    name: trigger in chrome
+
+    container:
+      image: cypress/browsers:node-20.9.0-chrome-118.0.5993.88-1-ff-118.0.2-edge-118.0.2088.46-1
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: cypress-io/github-action@v5
-        with:
-          browser: chrome
-          spec: cypress/e2e/Custom_scenarious/
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: npm run cy:run_chrome_headed -- --spec cypress/e2e/
