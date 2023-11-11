@@ -12,7 +12,7 @@ describe('Testing guru website', () => {
         cy.get('h1.thick-heading', {timeout: 6000}).should('be.visible'); // correct syntax of timeout
         })
 
-    it.skip('check search and validate results', () => {
+    it('check search and validate results', () => {
         cy.get('button.search-toggle-open').should('be.visible')
         .and('have.attr', 'data-toggle-target', '#search-drawer')
         .click();
