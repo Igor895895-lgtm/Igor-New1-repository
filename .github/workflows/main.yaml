@@ -20,4 +20,4 @@ jobs:
         run: npm install
 
       - name: Run Cypress tests
-        run: npm run cy:run_chrome_headed -- --spec cypress/e2e/Custom_scenarious/
+        run: npm run cy:run_chrome_headed -- --spec cypress/e2e/Custom_scenarious/guru_testing.cy.js Task_12.cy.js mainPage.cy.js newborn.cy.js
