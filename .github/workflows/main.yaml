@@ -23,8 +23,8 @@ jobs:
         # run: npm run cy:run_chrome_headed -- --spec cypress/e2e/333Custom_scenarious/
         uses: cypress-io/github-action@v6
         with:
-        browser: chrome
-        spec: cypress/e2e/333Custom_scenarious/newborn.cy.js
+         browser: chrome
+         spec: cypress/e2e/333Custom_scenarious/newborn.cy.js
      
       - name: Save report
         uses: actions/upload-artifact@v3
