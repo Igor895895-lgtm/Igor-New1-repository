@@ -21,3 +21,16 @@ jobs:
 
       - name: Run Cypress tests
         run: npm run cy:run_chrome_headed -- --spec cypress/e2e/333Custom_scenarious/
+     
+      - name: Save report
+        uses: actions/upload-artifact@v3
+        with: 
+          path: cypress/reports/html
+          name: Main report
+        if: failure() || success()
+        
+      - name: Get report
+        uses: actions/download-artifact@v3
+        with:
+          name: Main report
+        if: failure() || success()
